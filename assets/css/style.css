@@ -1,7 +1,25 @@
+
+/* ----------------------------------------------------------------------------------------
+                                 1. NavBar-Search CSS
+ --------------------------------------------------------------------------------------- */
+
+.navbar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #17263c;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 2px;
+}
+
+/* ----------------------------------------------------------------------------------------
+                                 2. Map CSS
+ --------------------------------------------------------------------------------------- */
+
+
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 90%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {

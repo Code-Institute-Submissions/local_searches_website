@@ -85,11 +85,11 @@
           ]
         });
 
-        // Create the search box and link it to the UI element.
+        // Search box and attach to UI .
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
         
-        // Bias the SearchBox results towards current map's viewport.
+        // Connect SearchBox results and current map.
         map.addListener('bounds_changed', function() {
           searchBox.setBounds(map.getBounds());
         });
