@@ -6,9 +6,9 @@
 .navbar {
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #17263c;
-    border-bottom-color: #c5c5c5;
+    background-color: #2f3541;
     border-bottom-width: 2px;
+    border-bottom-color: #c5c5c5;
 }
 
 /* ----------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@
       }
       #description {
         font-family: Roboto;
-        font-size: 15px;
+        font-size: 5px;
         font-weight: 300;
       }
 

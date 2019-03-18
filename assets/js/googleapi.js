@@ -1,6 +1,6 @@
  function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
+          center: {lat: 53.350140, lng: -6.266155},
           zoom: 13,
           mapTypeId: 'roadmap',
           styles: [
@@ -140,6 +140,8 @@
               bounds.extend(place.geometry.location);
             }
           });
+          
           map.fitBounds(bounds);
         });
       }
+
