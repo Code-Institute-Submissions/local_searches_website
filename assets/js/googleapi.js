@@ -141,6 +141,7 @@
             }
           });
           
+
           map.fitBounds(bounds);
         });
       }

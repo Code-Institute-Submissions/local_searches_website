@@ -97,3 +97,17 @@
       #target {
         width: 345px;
       }
+      
+
+
+/* ----------------------------------------------------------------------------------------
+                                 1. Footer CSS
+ --------------------------------------------------------------------------------------- */
+
+.footer-wrap {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #2f3541;
+    border-bottom-width: 2px;
+    border-bottom-color: #c5c5c5;
+}
