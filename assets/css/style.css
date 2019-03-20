@@ -6,6 +6,12 @@
 
 .weather {
   color: #fff;
+  padding-left: 20px;
+  width: 10%;
+}
+
+.weather img {
+  width: 4em;
 }
 
 
@@ -158,6 +164,14 @@ header {
     padding-top: 13px;
 }
 
+
+.weather {
+  display: none;
 }
+
+
+}
+
+
 
 
