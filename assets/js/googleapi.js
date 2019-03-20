@@ -3,6 +3,7 @@
           center: {lat: 53.350140, lng: -6.266155},
           zoom: 13,
           mapTypeId: 'roadmap',
+          // Map Styles
           styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -83,6 +84,7 @@
               stylers: [{color: '#17263c'}]
             }
           ]
+          // Map Styles end
         });
 
         // Search box and attach to UI .
@@ -95,8 +97,7 @@
         });
 
         var markers = [];
-        // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
+        // Listen for the event fired and retrieve more details for that place.
         searchBox.addListener('places_changed', function() {
           var places = searchBox.getPlaces();
 
@@ -104,13 +105,13 @@
             return;
           }
 
-          // Clear out the old markers.
+          // Clear out old markers
           markers.forEach(function(marker) {
             marker.setMap(null);
           });
           markers = [];
 
-          // For each place, get the icon, name and location.
+          // Get the icon, name and location for each place.
           var bounds = new google.maps.LatLngBounds();
           places.forEach(function(place) {
             if (!place.geometry) {
@@ -125,7 +126,7 @@
               scaledSize: new google.maps.Size(25, 25)
             };
 
-            // Create a marker for each place.
+            // Marker creation for each place.
             markers.push(new google.maps.Marker({
               map: map,
               icon: icon,
@@ -140,8 +141,7 @@
               bounds.extend(place.geometry.location);
             }
           });
-          
-
+         
           map.fitBounds(bounds);
         });
       }

@@ -7,70 +7,73 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Site title -->
-    <title>Single Page App Landing Page</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon-16.png"/>
+    <title>Interactive Location Search Site</title>
+    <link rel="icon" src="http://raiseapp-html.themeapollo.com/dark/media/images/logo/logo_g_44x44.png" href="index.html" type="image/png">
+    <link rel="shortcut icon" type="image/png" href="http://raiseapp-html.themeapollo.com/dark/media/images/fav_icon_32.png">
+
+    <!-- css -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Bootstrap/fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- css -->
-    <link href="assets/css/style.css" rel="stylesheet">
     
 </head>
 
 <body>
     
+    
+    <!-- Navbar/Search -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-	            <a class="navbar-brand  mt-2 mt-lg-0" href="index.html">
-	            <img src=""></img></a>
-	            <input id="pac-input" class="controls" type="text" placeholder="Type City & Activity. Ie; Pubs in Dublin">
-      </nav>
-      
+        <nav class="navbar navbar-expand-lg sticky-top ">
+            <div class="navbar-brand" id="logo">
+                <img src="http://raiseapp-html.themeapollo.com/dark/media/images/logo/logo_g_44x44.png"></img>
+            </div>
+            <input id="pac-input" class="controls" type="text" placeholder="Type Activity & Location (Pubs in Dublin)">
+            
+                    
+                        <div class="weather">
+                            <h3>testtesttest</h3>
+                        </div>
+                    
+        </nav>
     </header>
+    
+    
 	
+	<!-- Map -->
 	
 	<div id="map"></div>
+	
+	
+	
 
-<!-- Footer -->
-<footer>
-		
-</footer>
     
-	    <!-- JavaScript Tags -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrap footer-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="social-icon-wrap">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook social-icon" aria-hidden="true"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
+                            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p social-icon" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram social-icon" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
 	    
-	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places"></script>
+    <!-- JavaScript Tags -->
+	    <script type="text/javascript" src="assets/js/googleapi.js"></script>
 	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places&callback=initAutocomplete"
          async defer></script>
+         
+         
 	    
-	    <script type="text/javascript" src="assets/js/googleapi.js"></script>
-
-<footer>    
-
-                <div class="footer-wrap footer-3">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-center">
-
-								<a class="footer-logo" href="../index.html">
-									<img src="" alt="Logo">
-								</a>
-								<div class="social-icon-wrap">
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-</footer>    
-	    
-    
 </body>
 
 </html>

@@ -1,27 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600');
 
 /* ----------------------------------------------------------------------------------------
                                  1. NavBar-Search CSS
  --------------------------------------------------------------------------------------- */
 
-.navbar {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    background-color: #2f3541;
-    border-bottom-width: 2px;
-    border-bottom-color: #c5c5c5;
+.weather {
+  color: #fff;
 }
+
+
+header {
+    padding-bottom: 17px;
+    padding-top: 17px;
+    background-color: #17263c;
+    border-bottom: 1px solid #38414d;
+}
+
+
+ #pac-input {
+        background-color: #242f3e;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 6px 11px 6px 13px;
+        width: 100%;
+        border: 1px solid #14b4a8;
+        
+}
+
+
+#logo img {
+    width: 30px;
+}
+
+
 
 /* ----------------------------------------------------------------------------------------
                                  2. Map CSS
  --------------------------------------------------------------------------------------- */
 
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
         height: 90%;
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -72,16 +95,6 @@
         font-weight: 300;
       }
 
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 500px;
-      }
 
       #pac-input:focus {
         border-color: #4d90fe;
@@ -94,6 +107,7 @@
         font-weight: 500;
         padding: 6px 12px;
       }
+      
       #target {
         width: 345px;
       }
@@ -101,13 +115,49 @@
 
 
 /* ----------------------------------------------------------------------------------------
-                                 1. Footer CSS
+                                 3. Footer CSS
  --------------------------------------------------------------------------------------- */
 
 .footer-wrap {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    background-color: #2f3541;
-    border-bottom-width: 2px;
-    border-bottom-color: #c5c5c5;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: #17263c;
+    border-top: 1px solid #38414d;
 }
+
+
+.fab {
+    color: #14b4a8;
+}
+
+.fab:hover {
+   color: #38414d;
+}
+
+.social-icon {
+    padding-right: 18px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+                                 Media Queries
+ --------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 990px) {
+
+#logo {
+    padding-bottom: 13px;
+    justify-content: center;
+    margin: auto;
+}
+
+header {
+    padding-bottom: 12px;
+    padding-top: 13px;
+}
+
+}
+
+
