@@ -126,7 +126,7 @@
               scaledSize: new google.maps.Size(25, 25)
             };
 
-            // Marker creation for each place.
+            // Marker creation for every place.
             markers.push(new google.maps.Marker({
               map: map,
               icon: icon,
@@ -135,7 +135,7 @@
             }));
 
             if (place.geometry.viewport) {
-              // Only geocodes have viewport.
+              // Viewport for geocodes.
               bounds.union(place.geometry.viewport);
             } else {
               bounds.extend(place.geometry.location);

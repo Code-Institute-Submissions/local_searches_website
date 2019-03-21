@@ -13,11 +13,11 @@ links to the sourcer website so visitors can see the whole week forescast. This 
 
 
 A few potential users are someone who:
-1. Tourist thinking in visiting Dublin
+1. Tourist planning in visiting Dublin
 2. Local people that one to find new places or things to do
 3. Tourist that one to look for places outise dublin (altough the weather widget wont apply)
 
-Initial wireframes can be found <a href="" target="_blank">here</a>.
+- Initial Wireframes can be found [here](https://github.com/lucassuar/local_searches_website/assets/wireframes)
 
 ## Features
 
@@ -33,6 +33,7 @@ This is a simple one page aplication with the following features
 
 ### Features Left to Implement
 - Incorporate to get more information and photos for each place and link to their business website (if provided)
+- Weather API with https://home.openweathermap.org -> API Key has never been actiavted on time. (Code writen on weather.js)
 
 
 ## Google Places API
@@ -43,6 +44,7 @@ Thre main functionalities were implemented using the official Google code librar
 2. Local searches.
 3. Dark theme style.
 
+*IMPORTANT NOTE: All api code used in this project are official code from Google Places API´s documentation.
 
 ## Technologies Used
 
@@ -69,6 +71,8 @@ Extensive testing has been carried out for all elements of the application. Belo
 - Zoom functionality works perfectly
 - Weather widget works and dissapear in medium to smaller sizes to avoid cluttering.
 - Social media icons in footer links succesfully and hover effects works perfectly
+- An error has been detected (GET https://api.openweathermap.org/data/2.5/weather?q=Dublin,Ireland&804ff9591cf3f58dd01ceea9f8c58e20 401 (Unauthorized))
+- as weather API has never been accepted. just decide to leave it on to show some of the code I wrote in order to access JSON data.
 
 
 ## Deployment
@@ -88,15 +92,12 @@ can see an overview of the process I followed:
 - Push repository to Github
 
 
-### Content
-
-kkk
-
 ### Acknowledgements
 
 * Inspiration on colors: http://raiseapp-html.themeapollo.com/dark/blog_dual_sidebar.html
 * Logo/Favicon: http://raiseapp-html.themeapollo.com/dark/blog_dual_sidebar.html
 * Weather app: https://www.booked.net
+* Second weather API: https://home.openweathermap.org/ (Not actiavated finally on this project.)
 
 
 #### Licence
