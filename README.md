@@ -72,7 +72,7 @@ Extensive testing has been carried out for all elements of the application. Belo
 - Weather widget works and dissapear in medium to smaller sizes to avoid cluttering.
 - Social media icons in footer links succesfully and hover effects works perfectly
 - An error has been detected (GET https://api.openweathermap.org/data/2.5/weather?q=Dublin,Ireland&804ff9591cf3f58dd01ceea9f8c58e20 401 (Unauthorized))
-- as weather API has never been accepted. just decide to leave it on to show some of the code I wrote in order to access JSON data.
+- NOTE RE: API ERROR: as weather API has never been accepted. just decide to leave it on to show some of the code I wrote in order to access JSON data.
 
 
 ## Deployment
