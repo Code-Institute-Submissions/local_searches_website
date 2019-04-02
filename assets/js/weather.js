@@ -10,7 +10,7 @@ request.onload = function() {
     console.log(data);
   } else {
     // We reached our target server, but it returned an error
-        console.log('Unautorized API error has been left in purpouse to show the initial API call process i follow. More info on README file');
+        console.log('Unautorized API error above ↑ has been left in purpouse to show the initial API call process I followed. More info on README file');
   }
 };
 

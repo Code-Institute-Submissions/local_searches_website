@@ -37,7 +37,7 @@ header {
 }
 
 .weather img {
-  width: 5.2em;
+  width: 5.9em;
 }
 
 .col-md-10 {
@@ -115,10 +115,20 @@ header {
  --------------------------------------------------------------------------------------- */
 
 
+
+
 @media screen and (max-width: 777px) {
 
 #logo {
     padding-bottom: 0.6em;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.weather img {
+  width: 4.8em;
 }
 
 }

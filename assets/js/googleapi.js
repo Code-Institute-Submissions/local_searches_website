@@ -126,13 +126,31 @@
               scaledSize: new google.maps.Size(25, 25)
             };
 
-            // Marker creation for every place.
-            markers.push(new google.maps.Marker({
+
+            const placeMarker = new google.maps.Marker({
               map: map,
               icon: icon,
               title: place.name,
               position: place.geometry.location
-            }));
+            });
+            
+            // infowindows on markers
+            const placeHtmlAttribution = place.photos[0].html_attributions[0];
+            const infoWindowContent = (
+              `<div><b>${place.name}</b></div>
+              <div>${place.formatted_address}</div>
+              <div><span>Users Rating: </span>${place.rating}</div>
+              <div><span>Some photos by users: </span>${placeHtmlAttribution}</div>`
+            );
+            const infoWindow = new google.maps.InfoWindow({
+              content: infoWindowContent
+            });
+            google.maps.event.addListener(placeMarker, 'click', function () {
+              infoWindow.open(map, placeMarker);
+            });
+
+            // Marker creation for every place.
+            markers.push(placeMarker);
 
             if (place.geometry.viewport) {
               // Viewport for geocodes.
@@ -145,4 +163,3 @@
           map.fitBounds(bounds);
         });
       }
-
