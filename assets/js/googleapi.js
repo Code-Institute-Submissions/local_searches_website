@@ -133,12 +133,13 @@
               title: place.name,
               position: place.geometry.location
             });
-            
+      
             // infowindows on markers
             const placeHtmlAttribution = place.photos[0].html_attributions[0];
             const infoWindowContent = (
               `<div><b>${place.name}</b></div>
               <div>${place.formatted_address}</div>
+              <div><span>Is it open?: </span>${place.opening_hours.open_now}</div>
               <div><span>Users Rating: </span>${place.rating}</div>
               <div><span>Some photos by users: </span>${placeHtmlAttribution}</div>`
             );
