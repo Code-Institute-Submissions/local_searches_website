@@ -2,7 +2,12 @@
 
 This project is an interactive website designed for users who wants to find any type of attraction, hotel, restaurant, pub around Dublin.
 Altough as it is develop through Google Places API, it can show any location around the world.
- 
+
+---
+- [Website Here](https://lucassuar.github.io/local_searches_website/)
+permalink: /index.html
+---
+
 ## UX
  
 The Design/UI of this website has been created to provide users with a fun and interactive way to discover touristic places
